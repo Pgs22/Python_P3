@@ -3,6 +3,15 @@
 
 #Ejercicio 1
 #Pide un número y muestra un mensaje de bienvenida si el valor es múltiplo de 2 o mayor que 20.
+import math
+numero = float(input("Escribe un número: "))
+multiplo = numero % 2
+if(multiplo == 0):
+    print()
+else(numero > 20):
+    print()
+
+
 
 #Ejercicio 2
 #Crea un programa que reciba un número del 1 al 4 y devuelva el día de la semana correspondiente: 
@@ -34,20 +43,15 @@
 #Define un número entero entre 0 y 10 y pide al usuario que intente adivinarlo.
 #Si falla, vuelve a pedirlo.
 #Si acierta, muestra el número y el total de intentos.
-#Funciones y control de operaciones
+
+###########Funciones y control de operaciones
+
 #Ejercicio 9
 #Desarrolla un programa que permita al usuario elegir entre diferentes operaciones mediante un número del 1 al 4.
-#•
-#El programa solo finalizará si se elige la opción 0.
-#•
-#Después de realizar la operación seleccionada, se deben mostrar nuevamente las opciones.
-#•
-#Operaciones disponibles:
-#o
-#Multiplicar dos números indicados por el usuario sin usar el operador de multiplicación.
-##o
-#Determinar el número mayor y el menor de un grupo de números introducidos por el usuario.
-#o
-#Mostrar los números pares.
-#o
-#Mostrar la media de los números introducidos.
+#•El programa solo finalizará si se elige la opción 0.
+#•Después de realizar la operación seleccionada, se deben mostrar nuevamente las opciones.
+#•Operaciones disponibles:
+#oMultiplicar dos números indicados por el usuario sin usar el operador de multiplicación.
+#oDeterminar el número mayor y el menor de un grupo de números introducidos por el usuario.
+#oMostrar los números pares.
+#oMostrar la media de los números introducidos.
