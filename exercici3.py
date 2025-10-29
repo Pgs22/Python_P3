@@ -3,28 +3,63 @@
 
 #Ejercicio 1
 #Pide un número y muestra un mensaje de bienvenida si el valor es múltiplo de 2 o mayor que 20.
-import math
 numero = float(input("Escribe un número: "))
 multiplo = numero % 2
-if(multiplo == 0):
-    print()
-else(numero > 20):
-    print()
-
-
+if(multiplo == 0 or numero > 20):
+    print("Bienvenido")
 
 #Ejercicio 2
 #Crea un programa que reciba un número del 1 al 4 y devuelva el día de la semana correspondiente: 
 # lunes, 2 martes, 3 miércoles, 4 jueves.
+numero = input("Escribe un número: ")
+match numero:
+    case 1:
+        print("lunes")
+    case 2:
+        print("martes")
+    case 3:
+        print("miércoles")
+    case 4:
+        print("jueves")
 
 #Ejercicio 3
 #Pide tres números y determina:
+numero1 = input("Escribe el primer número: ")
+numero2 = input("Escribe el segundo número: ")
+numero3 = input("Escribe el tercer número: ")
 #•cuál es el mayor
+if(numero1 > numero2 and numero1 > numero3):
+    print("El número más alto es el número 1: ", numero1)
+elif(numero2 > numero3):
+    print("El número más alto es el número 2: ", numero2)
+else:
+    print("El número más alto es el número 3: ", numero3)
+
 #•cuál es el menor
+if(numero1 < numero2 and numero1 < numero3):
+    print("El número menor es el número 1: ", numero1)
+elif(numero2 < numero3):
+    print("El número menor es el número 2: ", numero2)
+else:
+    print("El número menor es el número 3: ", numero3)
+
 #•cuántos números se repiten
+count = 0
+if(numero1 == numero2):
+    count+= 1
+elif(numero2 == numero3):
+    count+= 1
+elif(numero3 == numero1):
+    count+= 1
+print(count)
 
 #Ejercicio 4
 #Pide tres números y muéstralos ordenados de mayor a menor.
+numero1 = input("Escribe el primer número: ")
+numero2 = input("Escribe el segundo número: ")
+numero3 = input("Escribe el tercer número: ")
+lista = [numero1, numero2, numero3]
+ordenados = sorted(lista)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
