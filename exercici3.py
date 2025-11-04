@@ -22,11 +22,11 @@ match numero:
     case 4:
         print("jueves")
 
-#Ejercicio 3
+#Ejercicio 3 ----REVISAR------------------------------------------
 #Pide tres números y determina:
-numero1 = input("Escribe el primer número: ")
-numero2 = input("Escribe el segundo número: ")
-numero3 = input("Escribe el tercer número: ")
+numero1 = int(input("Escribe el primer número: "))
+numero2 = int(input("Escribe el segundo número: "))
+numero3 = int(input("Escribe el tercer número: "))
 #•cuál es el mayor
 if(numero1 > numero2 and numero1 > numero3):
     print("El número más alto es el número 1: ", numero1)
@@ -55,11 +55,11 @@ print(count)
 
 #Ejercicio 4
 #Pide tres números y muéstralos ordenados de mayor a menor.
-numero1 = input("Escribe el primer número: ")
-numero2 = input("Escribe el segundo número: ")
-numero3 = input("Escribe el tercer número: ")
+numero1 = int(input("Escribe el primer número: "))
+numero2 = int(input("Escribe el segundo número: "))
+numero3 = int(input("Escribe el tercer número: "))
 lista = [numero1, numero2, numero3]
-ordenados = sorted(lista)
+ordenados = sorted(lista, reverse=True)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
