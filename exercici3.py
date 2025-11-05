@@ -58,18 +58,20 @@ print(count)
 
 #Ejercicio 4
 #Pide tres números y muéstralos ordenados de mayor a menor.
-numero1 = int(input("Escribe el primer número: "))
-numero2 = int(input("Escribe el segundo número: "))
-numero3 = int(input("Escribe el tercer número: "))
+numero1 = input("Escribe el primer número: ")
+numero2 = input("Escribe el segundo número: ")
+numero3 = input("Escribe el tercer número: ")
 lista = [numero1, numero2, numero3]
 ordenados = sorted(lista, reverse=True)
+print(ordenados)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
 num = int(input("Escribe un número: "))
-suma = 0
+suma = int(0)
 for i in range(3):
     suma += num
+print(suma)
 
 
 ###########Bucles y validación de datos
