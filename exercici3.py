@@ -10,8 +10,9 @@ if(multiplo == 0 or numero > 20):
 
 #Ejercicio 2
 #Crea un programa que reciba un número del 1 al 4 y devuelva el día de la semana correspondiente: 
-# lunes, 2 martes, 3 miércoles, 4 jueves.
-numero = input("Escribe un número: ")
+# 1 lunes, 2 martes, 3 miércoles, 4 jueves.
+import random
+numero = (random.randrange(1, 5))
 match numero:
     case 1:
         print("lunes")
@@ -22,7 +23,7 @@ match numero:
     case 4:
         print("jueves")
 
-#Ejercicio 3 ----REVISAR------------------------------------------
+#Ejercicio 3 ----REVISAR------------------------------------------no va la suma count
 #Pide tres números y determina:
 numero1 = int(input("Escribe el primer número: "))
 numero2 = int(input("Escribe el segundo número: "))
@@ -32,25 +33,27 @@ if(numero1 > numero2 and numero1 > numero3):
     print("El número más alto es el número 1: ", numero1)
 elif(numero2 > numero3):
     print("El número más alto es el número 2: ", numero2)
-else:
+elif(numero2 < numero3):
     print("El número más alto es el número 3: ", numero3)
+
 
 #•cuál es el menor
 if(numero1 < numero2 and numero1 < numero3):
     print("El número menor es el número 1: ", numero1)
 elif(numero2 < numero3):
     print("El número menor es el número 2: ", numero2)
-else:
+elif(numero2 > numero3):
     print("El número menor es el número 3: ", numero3)
 
+
 #•cuántos números se repiten
-count = 0
+count = int(0)
 if(numero1 == numero2):
-    count+= 1
-elif(numero2 == numero3):
-    count+= 1
-elif(numero3 == numero1):
-    count+= 1
+    count += 1
+if(numero2 == numero3):
+    count += 1
+if(numero3 == numero1):
+    count += 1
 print(count)
 
 #Ejercicio 4
@@ -63,6 +66,10 @@ ordenados = sorted(lista, reverse=True)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
+num = int(input("Escribe un número: "))
+suma = 0
+for i in range(3):
+    suma += num
 
 
 ###########Bucles y validación de datos
