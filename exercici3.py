@@ -91,7 +91,7 @@ def ejercicio6():
 #Ejercicio 7
 #Pide un número repetidamente hasta que el usuario introduzca un valor decimal válido 
 # comprendido entre 0 y 10.
-decimalValido = True
+decimalValido = False
 while decimalValido:
     decimal = float(input("Escribe el primer número: "))
     if(decimal >= 0 AND decimal <= 10):
@@ -110,6 +110,8 @@ while bingo:
     numeroUsuario = int(input("Intenta adivinar el número (Pista: El número es entre 0 y 10: "))
     if(numero == numeroUsuario):
         bingo = True
+    else:
+        bingo = False
 
 ###########Funciones y control de operaciones
 
