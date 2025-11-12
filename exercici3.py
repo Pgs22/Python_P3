@@ -94,7 +94,7 @@ def ejercicio6():
 decimalValido = True
 while decimalValido:
     decimal = float(input("Escribe el primer número: "))
-    if(decimal >= 0 or decimal <= 10):
+    if(decimal >= 0 AND decimal <= 10):
         decimalValido = True
     else:
         decimalValido = False
