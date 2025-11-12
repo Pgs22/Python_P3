@@ -82,14 +82,10 @@ print(suma)
 #Pide dos números enteros y multiplícalos sin usar el operador de multiplicación, utilizando sumas y bucles.
 def ejercicio6():
     resultado = 0
-    numeros = 0
-    while numeros < 2:
-        entero1 = int(input("Escribe el primer número: "))
-        numeros += 1
-        entero2 = int(input("Escribe el segundo número: "))
-        numeros += 1
-        for i in range(entero1):
-            resultado += entero2
+    entero1 = int(input("Escribe el primer número: "))
+    entero2 = int(input("Escribe el segundo número: "))
+    for i in range(entero1):
+        resultado += entero2
     print(resultado)
 
 #Ejercicio 7
