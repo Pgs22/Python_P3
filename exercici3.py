@@ -3,7 +3,7 @@
 
 #Ejercicio 1
 #Pide un número y muestra un mensaje de bienvenida si el valor es múltiplo de 2 o mayor que 20.
-numero = float(input("Escribe un número: "))
+numero = int(input("Escribe un número: "))
 multiplo = numero % 2
 if(multiplo == 0 or numero > 20):
     print("Bienvenido")
@@ -23,7 +23,7 @@ match numero:
     case 4:
         print("jueves")
 
-#Ejercicio 3 ----REVISAR------------------------------------------no va la suma count
+#Ejercicio 3
 #Pide tres números y determina:
 def ejercicio3():
     numero1 = int(input("Escribe el primer número: "))
@@ -60,9 +60,9 @@ def ejercicio3():
 #Ejercicio 4
 #Pide tres números y muéstralos ordenados de mayor a menor.
 def ejercicio4():
-    numero1 = input("Escribe el primer número: ")
-    numero2 = input("Escribe el segundo número: ")
-    numero3 = input("Escribe el tercer número: ")
+    numero1 = int(input("Escribe el primer número: "))
+    numero2 = int(input("Escribe el segundo número: "))
+    numero3 = int(input("Escribe el tercer número: "))
     lista = [numero1, numero2, numero3]
     ordenados = sorted(lista, reverse=True)
     print(ordenados)
