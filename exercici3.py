@@ -87,7 +87,8 @@ while (len(numeros)) > 0:
     for i in range(numeros[i]):
         for j in range(numeros[j]):
             resultado += numeros[i]
-      
+    del numeros[0]
+    del numeros[1]
 print(suma1 , "y" , suma2)
 
 
