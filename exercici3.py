@@ -78,25 +78,28 @@ print(suma)
 
 #Ejercicio 6
 #Pide dos números enteros y multiplícalos sin usar el operador de multiplicación, utilizando sumas y bucles.
+resultado = 0
 numeros = 0
-suma1 = 0
-suma2 = 0
-while numeros == 2:
+while numeros < 2:
     entero1 = int(input("Escribe el primer número: "))
+    numeros += 1
     entero2 = int(input("Escribe el segundo número: "))
-    if(entero1 > 0):
-       for i in range(2):
-            suma1 += entero1
-    elif(entero2 > 0):
-        for i in range(2):
-            suma2 += entero2
-    
-print(suma1 , "y" , suma2)
+    numeros += 1
+    for i in range(entero1):
+        resultado += entero2
+print(resultado)
 
 
 #Ejercicio 7
 #Pide un número repetidamente hasta que el usuario introduzca un valor decimal válido 
 # comprendido entre 0 y 10.
+decimalValido = True
+while decimalValido:
+    decimal = float(input("Escribe el primer número: "))
+    if(decimal >= 0 or decimal <= 10):
+        decimalValido = True
+
+
 
 #Ejercicio 8
 #Define un número entero entre 0 y 10 y pide al usuario que intente adivinarlo.
