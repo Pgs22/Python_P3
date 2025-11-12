@@ -67,8 +67,8 @@ print(ordenados)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
-num = int(input("Escribe un número"{}))
-suma = int(0)
+num = int(input("Escribe un número: "))
+suma = 0
 for i in range(3):
     suma += num
 print(suma)
@@ -97,19 +97,38 @@ while decimalValido:
     decimal = float(input("Escribe el primer número: "))
     if(decimal >= 0 or decimal <= 10):
         decimalValido = True
-
-
+    else:
+        decimalValido = False
 
 #Ejercicio 8
 #Define un número entero entre 0 y 10 y pide al usuario que intente adivinarlo.
 #Si falla, vuelve a pedirlo.
 #Si acierta, muestra el número y el total de intentos.
+import random
+numero = (random.randrange(0, 11))
+bingo = True
+while bingo:
+    numeroUsuario = int(input("Intenta adivinar el número (Pista: El número es entre 0 y 10: "))
+    if(numero == numeroUsuario):
+        bingo = True
+    else:
+        bingo = False
 
 ###########Funciones y control de operaciones
 
 #Ejercicio 9
 #Desarrolla un programa que permita al usuario elegir entre diferentes operaciones mediante un número del 1 al 4.
 #•El programa solo finalizará si se elige la opción 0.
+import random
+numero = (random.randrange(1, 5))
+while numero:
+    case1:
+        numero * 1
+    case2:
+        numero + 2
+    
+
+
 #•Después de realizar la operación seleccionada, se deben mostrar nuevamente las opciones.
 #•Operaciones disponibles:
 #oMultiplicar dos números indicados por el usuario sin usar el operador de multiplicación.
