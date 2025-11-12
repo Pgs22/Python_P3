@@ -25,69 +25,73 @@ match numero:
 
 #Ejercicio 3 ----REVISAR------------------------------------------no va la suma count
 #Pide tres números y determina:
-numero1 = int(input("Escribe el primer número: "))
-numero2 = int(input("Escribe el segundo número: "))
-numero3 = int(input("Escribe el tercer número: "))
-#•cuál es el mayor
-if(numero1 > numero2 and numero1 > numero3):
-    print("El número más alto es el número 1: ", numero1)
-elif(numero2 > numero3):
-    print("El número más alto es el número 2: ", numero2)
-elif(numero2 < numero3):
-    print("El número más alto es el número 3: ", numero3)
+def ejercicio3():
+    numero1 = int(input("Escribe el primer número: "))
+    numero2 = int(input("Escribe el segundo número: "))
+    numero3 = int(input("Escribe el tercer número: "))
+    #•cuál es el mayor
+    if(numero1 > numero2 and numero1 > numero3):
+        print("El número más alto es el número 1: ", numero1)
+    elif(numero2 > numero3):
+        print("El número más alto es el número 2: ", numero2)
+    elif(numero2 < numero3):
+        print("El número más alto es el número 3: ", numero3)
 
 
-#•cuál es el menor
-if(numero1 < numero2 and numero1 < numero3):
-    print("El número menor es el número 1: ", numero1)
-elif(numero2 < numero3):
-    print("El número menor es el número 2: ", numero2)
-elif(numero2 > numero3):
-    print("El número menor es el número 3: ", numero3)
+    #•cuál es el menor
+    if(numero1 < numero2 and numero1 < numero3):
+        print("El número menor es el número 1: ", numero1)
+    elif(numero2 < numero3):
+        print("El número menor es el número 2: ", numero2)
+    elif(numero2 > numero3):
+        print("El número menor es el número 3: ", numero3)
 
 
-#•cuántos números se repiten
-count = int(0)
-if(numero1 == numero2):
-    count += 1
-if(numero2 == numero3):
-    count += 1
-if(numero3 == numero1):
-    count += 1
-print(count)
+    #•cuántos números se repiten
+    count = int(0)
+    if(numero1 == numero2):
+        count += 1
+    if(numero2 == numero3):
+        count += 1
+    if(numero3 == numero1):
+        count += 1
+    print(count)
 
 #Ejercicio 4
 #Pide tres números y muéstralos ordenados de mayor a menor.
-numero1 = input("Escribe el primer número: ")
-numero2 = input("Escribe el segundo número: ")
-numero3 = input("Escribe el tercer número: ")
-lista = [numero1, numero2, numero3]
-ordenados = sorted(lista, reverse=True)
-print(ordenados)
+def ejercicio4():
+    numero1 = input("Escribe el primer número: ")
+    numero2 = input("Escribe el segundo número: ")
+    numero3 = input("Escribe el tercer número: ")
+    lista = [numero1, numero2, numero3]
+    ordenados = sorted(lista, reverse=True)
+    print(ordenados)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
-num = int(input("Escribe un número: "))
-suma = 0
-for i in range(3):
-    suma += num
-print(suma)
+def ejercicio6():
+    num = int(input("Escribe un número: "))
+    suma = 0
+    for i in range(3):
+        suma += num
+    print(suma)
 
 
 ###########Bucles y validación de datos
 
 #Ejercicio 6
 #Pide dos números enteros y multiplícalos sin usar el operador de multiplicación, utilizando sumas y bucles.
-resultado = 0
-numeros = 0
-while numeros < 2:
-    entero1 = int(input("Escribe el primer número: "))
-    numeros += 1
-    entero2 = int(input("Escribe el segundo número: "))
-    numeros += 1
-    for i in range(entero1):
-        resultado += entero2
-print(resultado)
+def ejercicio6():
+    resultado = 0
+    numeros = 0
+    while numeros < 2:
+        entero1 = int(input("Escribe el primer número: "))
+        numeros += 1
+        entero2 = int(input("Escribe el segundo número: "))
+        numeros += 1
+        for i in range(entero1):
+            resultado += entero2
+    print(resultado)
 
 #Ejercicio 7
 #Pide un número repetidamente hasta que el usuario introduzca un valor decimal válido 
@@ -106,32 +110,54 @@ while decimalValido:
 #Si acierta, muestra el número y el total de intentos.
 import random
 numero = (random.randrange(0, 11))
-bingo = True
+bingo = False
 while bingo:
     numeroUsuario = int(input("Intenta adivinar el número (Pista: El número es entre 0 y 10: "))
     if(numero == numeroUsuario):
         bingo = True
-    else:
-        bingo = False
 
 ###########Funciones y control de operaciones
 
 #Ejercicio 9
 #Desarrolla un programa que permita al usuario elegir entre diferentes operaciones mediante un número del 1 al 4.
-#•El programa solo finalizará si se elige la opción 0.
-import random
-numero = (random.randrange(1, 5))
-while numero:
-    case1:
-        numero * 1
-    case2:
-        numero + 2
-    
+    #•El programa solo finalizará si se elige la opción 0.
+    #•Después de realizar la operación seleccionada, se deben mostrar nuevamente las opciones.
+    #•Operaciones disponibles:
+        #oMultiplicar dos números indicados por el usuario sin usar el operador de multiplicación.
+        #oDeterminar el número mayor y el menor de un grupo de números introducidos por el usuario.
+        #oMostrar los números pares.
+        #oMostrar la media de los números introducidos.
+
+def menu(opcion):
+    match opcion:
+        case 1:
+            return "Operación 1" + " Multiplicar dos números indicados por el usuario sin usar el operador de multiplicación."
+        case 2:
+            return "Operación 2" + " Determinar el número mayor y el menor de un grupo de números introducidos por el usuario."
+        case 3:
+            return "Operación 3" + " Mostrar los números pares."
+        case 4:
+            return "Operación 4" + " Mostrar la media de los números introducidos."
+
+finalizarPrograma = True
+while finalizarPrograma: #Ejecuta el While mientras sea true
+    menu(opcion)
+    opcion = int(input("Elige una opción del 1 al 4 (0 para salir): "))
+    if opcion == 0:
+        print("Programa finalizado")
+        finalizarPrograma = False
+    if opcion <= 4:
+        def operacion(opcion):
+            match opcion:
+                case 1:
+                    ejercicio6()
+                case 2:
+                    ejercicio3()
+                case 3:
+                    ejercicio4()
+                case 4:
+                    ejercicio6()
+
+    menu(opcion)
 
 
-#•Después de realizar la operación seleccionada, se deben mostrar nuevamente las opciones.
-#•Operaciones disponibles:
-#oMultiplicar dos números indicados por el usuario sin usar el operador de multiplicación.
-#oDeterminar el número mayor y el menor de un grupo de números introducidos por el usuario.
-#oMostrar los números pares.
-#oMostrar la media de los números introducidos.
