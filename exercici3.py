@@ -67,7 +67,7 @@ print(ordenados)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
-num = int(input("Escribe un número: "))
+num = int(input("Escribe un número"{}))
 suma = int(0)
 for i in range(3):
     suma += num
@@ -88,7 +88,6 @@ while numeros < 2:
     for i in range(entero1):
         resultado += entero2
 print(resultado)
-
 
 #Ejercicio 7
 #Pide un número repetidamente hasta que el usuario introduzca un valor decimal válido 
