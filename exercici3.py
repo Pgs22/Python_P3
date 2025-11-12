@@ -67,7 +67,7 @@ print(ordenados)
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
-num = int(input("Escribe un número: "))
+num = int(input("Escribe un número"{}))
 suma = int(0)
 for i in range(3):
     suma += num
@@ -78,20 +78,16 @@ print(suma)
 
 #Ejercicio 6
 #Pide dos números enteros y multiplícalos sin usar el operador de multiplicación, utilizando sumas y bucles.
-numeros = 0
-suma1 = 0
-suma2 = 0
-while numeros == 2:
-    entero1 = int(input("Escribe el primer número: "))
-    entero2 = int(input("Escribe el segundo número: "))
-    if(entero1 > 0):
-       for i in range(2):
-            suma1 += entero1
-    numeros++
-    if(entero2 > 0):
-        for i in range(2):
-            suma2 += entero2
-    numeros++        
+numeros = []
+resultado = 0
+for i in range(2):
+    entero = int(input("Escribe el número"{i+1}": "))
+    numeros.append(entero)
+while (len(numeros)) > 0:
+    for i in range(len(numeros):
+        for j in range(numeros[i]):
+            resultado += numeros[i]
+    resultado += numeros[i]   
 print(suma1 , "y" , suma2)
 
 
