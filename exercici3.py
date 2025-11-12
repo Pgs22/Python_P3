@@ -87,10 +87,11 @@ while numeros == 2:
     if(entero1 > 0):
        for i in range(2):
             suma1 += entero1
-    elif(entero2 > 0):
+    numeros++
+    if(entero2 > 0):
         for i in range(2):
             suma2 += entero2
-    
+    numeros++        
 print(suma1 , "y" , suma2)
 
 
