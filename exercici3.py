@@ -84,10 +84,10 @@ for i in range(2):
     entero = int(input("Escribe el número"{i+1}": "))
     numeros.append(entero)
 while (len(numeros)) > 0:
-    for i in range(len(numeros):
-        for j in range(numeros[i]):
+    for i in range(numeros[i]):
+        for j in range(numeros[j]):
             resultado += numeros[i]
-    resultado += numeros[i]   
+      
 print(suma1 , "y" , suma2)
 
 
