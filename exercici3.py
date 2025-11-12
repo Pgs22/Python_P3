@@ -69,12 +69,11 @@ def ejercicio4():
 
 #Ejercicio 5
 #Pide un número y multiplícalo por 3 sin usar el operador de multiplicación, utilizando sumas sucesivas.
-def ejercicio6():
-    num = int(input("Escribe un número: "))
-    suma = 0
-    for i in range(3):
-        suma += num
-    print(suma)
+num = int(input("Escribe un número: "))
+suma = 0
+for i in range(3):
+    suma += num
+print(suma)
 
 
 ###########Bucles y validación de datos
