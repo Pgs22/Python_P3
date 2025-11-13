@@ -94,7 +94,7 @@ def ejercicio6():
 decimalValido = False
 while decimalValido:
     decimal = float(input("Escribe el primer número: "))
-    if(decimal >= 0 AND decimal <= 10):
+    if decimal >= 0 and decimal <= 10:
         decimalValido = True
     else:
         decimalValido = False
@@ -143,7 +143,7 @@ while finalizarPrograma: #Ejecuta el While mientras sea true
     if opcion == 0:
         print("Programa finalizado")
         finalizarPrograma = False
-    if opcion <= 4:
+    if  opcion > 0 and opcion <= 4:
         def operacion(opcion):
             match opcion:
                 case 1:
@@ -154,7 +154,5 @@ while finalizarPrograma: #Ejecuta el While mientras sea true
                     ejercicio4()
                 case 4:
                     ejercicio6()
-
-    menu(opcion)
 
 
