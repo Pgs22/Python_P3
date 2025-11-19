@@ -5,7 +5,7 @@
 #Pide un número y muestra un mensaje de bienvenida si el valor es múltiplo de 2 o mayor que 20.
 
 numero = int(input("Escribe un número: "))
-if(numero % 2 or numero > 20):
+if(numero % 2 == 0 or numero > 20):
     print("Bienvenido")
 
 
